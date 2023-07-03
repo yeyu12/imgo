@@ -233,7 +233,7 @@ func (i *Image) Crop(x, y, width, height int) *Image {
 		return i
 	}
 
-	if width == i.width || height == i.height || width == 0 || height == 0 || x > i.width || y > i.height {
+	if width == 0 || height == 0 || x > i.width || y > i.height {
 		return i
 	}
 
